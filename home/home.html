@@ -1,9 +1,9 @@
 <h1>Hello {{ $ctrl.name }}!</h1>
 <p>
-  Start editing <b>home/home.html</b> :)
+  Actions: 
 
-  <a ui-sref="about({token: 'abc'})" target="_blank">about</a>
   <button class="button" ng-click="$ctrl.getUsers()"> Find Users!</button>
+  <button class="button" ng-click="$ctrl.selectedId = null;" ng-disabled="!$ctrl.selectedId">Unselect</button>
 </p>
 <span ng-if="show">Here I Am</span>
 <div class="list-container">
@@ -17,7 +17,7 @@
       selected
       unselectable
     ></user-item>
-    <!-- <ul>
+    <ul>
       <li ng-repeat="user in $ctrl.users">
         <user-item
           user="user"
@@ -25,12 +25,15 @@
           ng-on-select_me="$ctrl.onSelect($event)"
         ></user-item>
       </li>
-    </ul> -->
+    </ul>
   </div>
   <div class="vue">
     <h3 style="border-left: 4px solid var(--c-vue); padding-left: 8px;">
       Wrapped Vue Component
     </h3>
+    <!-- <p ng-if="$ctrl.selectedUser">
+      {{$ctrl.selectedUser.name}}
+    </p> -->
     <v-user-item
       ng-if="$ctrl.selectedUser"
       ng-prop-user="$ctrl.selectedUser"
@@ -57,7 +60,7 @@
       selected
       unselectable
     ></r-user-item>
-    <!-- <ul>
+    <ul>
       <li ng-repeat="user in $ctrl.users">
         <r-user-item
           ng-prop-user="user"
@@ -65,8 +68,7 @@
           ng-on-select_me="$ctrl.onSelect($event)"
         ></r-user-item>
       </li>
-    </ul> -->
+    </ul>
   </div>
-  <div></div>
-  <!-- <v-user-list heading="Vue Component using DI"></v-user-list> -->
+  <v-user-list heading="Vue Component using DI" style="grid-area: 2 / 1;"></v-user-list>
 </div>

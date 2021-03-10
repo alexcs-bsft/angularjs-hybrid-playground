@@ -20,7 +20,10 @@ export function getInitialProps(propsList) {
 
 export function callHooks(vm, hook) {
   if (vm) {
-    const hooks = vm.$options[hook] || [];
+    let hooks = vm.$options[hook] || [];
+    if (!Array.isArray(hooks)) {
+      hooks = [hooks];
+    }
     hooks.forEach(hook => {
       hook.call(vm);
     });

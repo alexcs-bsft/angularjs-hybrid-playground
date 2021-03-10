@@ -23,6 +23,7 @@ export default {
         ></user-item>
       </li>
     </ul>
+    <div ng-include="'home.html'"></div>
   </div>
   `,
   props: {

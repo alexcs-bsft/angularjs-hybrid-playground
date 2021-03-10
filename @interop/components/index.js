@@ -1,7 +1,7 @@
 import _kebabCase from 'lodash/kebabCase';
 
 import wrapReact from './react-custom-element-wrapper';
-import wrapVue from './vue-custom-element-wrapper';
+import wrapVue from './vue-wrapper';
 
 
 /**

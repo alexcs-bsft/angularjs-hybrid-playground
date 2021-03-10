@@ -25,7 +25,7 @@ class HomeCtrl {
   }
 
   async getUsers() {
-    this.users = await this.$Uservice.getUsers().then(res => res.data.slice(0,2));
+    this.users = await this.$Uservice.getUsers().then(res => res.data.slice(0,1));
     this.$scope.$applyAsync();
   }
 

@@ -13,7 +13,7 @@ p {
 .list-container {
   display: grid;
   width: 100vw;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .user {
