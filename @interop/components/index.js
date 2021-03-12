@@ -1,22 +1,7 @@
 import _kebabCase from 'lodash/kebabCase';
 
-import wrapReact from './react-custom-element-wrapper';
 import wrapVue from './vue-wrapper';
 
-
-/**
- * Wrap a given component in a native CustomElement and register it for use.
- * @param {React.ComponentClass} reactComponent - A react component constructor.
- *        Should implement propTypes to ensure reliable prop binding.
- * @param {string|boolean} [prefix='r'] - A string to prefix the component name with.
- *        Override the default with anything falsy to skip prefixing.
- */
-export function defineReactCustomElement(reactComponent, prefix = 'r') {
-  defineCustomElement(
-    wrapReact(reactComponent),
-    makeTagName(reactComponent.name, prefix),
-  );
-}
 
 /**
  * Wrap a given component in a native CustomElement and register it for use.

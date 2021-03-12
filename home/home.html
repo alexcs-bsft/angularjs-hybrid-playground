@@ -50,25 +50,5 @@
       </li>
     </ul>
   </div>
-  <div class="react">
-    <h3 style="border-left: 4px solid var(--c-react); padding-left: 8px;">
-      Wrapped React Component
-    </h3>
-    <r-user-item
-      ng-if="$ctrl.selectedUser"
-      ng-prop-user="$ctrl.selectedUser"
-      selected
-      unselectable
-    ></r-user-item>
-    <ul>
-      <li ng-repeat="user in $ctrl.users">
-        <r-user-item
-          ng-prop-user="user"
-          ng-prop-selected="user.id === $ctrl.selectedId"
-          ng-on-select_me="$ctrl.onSelect($event)"
-        ></r-user-item>
-      </li>
-    </ul>
-  </div>
   <v-user-list heading="Vue Component using DI" style="grid-area: 2 / 1;"></v-user-list>
 </div>

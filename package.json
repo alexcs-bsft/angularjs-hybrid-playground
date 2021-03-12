@@ -1,45 +1,20 @@
 {
-  "name": "angularjs-playground",
-  "version": "0.0.0",
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint"
-  },
+  "name": "angularjs-interop",
+  "version": "0.0.1",
+  "scripts": {},
   "private": true,
   "dependencies": {
-    "@angular/animations": "~10.2.0",
-    "@angular/common": "~10.2.0",
-    "@angular/compiler": "~10.2.0",
-    "@angular/core": "~10.2.0",
-    "@angular/forms": "~10.2.0",
-    "@angular/platform-browser": "~10.2.0",
-    "@angular/platform-browser-dynamic": "~10.2.0",
-    "@angular/router": "~10.2.0",
-    "@uirouter/angularjs": "1.0.28",
-    "@vue/shared": "^3.0.7",
-    "@vue/web-component-wrapper": "^1.2.0",
-    "angular": "1.8.2",
-    "bulma": "0.9.1",
-    "lodash": "^4.17.20",
-    "prop-types": "^15.7.2",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "rxjs": "~6.6.0",
-    "tslib": "^2.0.0",
-    "vue": "^3.0.7",
-    "zone.js": "~0.10.2"
+    "@vue/shared": "^3.0.7"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.1002.0",
-    "@angular/cli": "~10.2.0",
-    "@angular/compiler-cli": "~10.2.0",
-    "@types/node": "^12.11.1",
-    "codelyzer": "^6.0.0",
-    "ts-node": "~8.3.0",
-    "tslint": "~6.1.0",
-    "typescript": "~4.0.2"
+    "@uirouter/angularjs": "1.0.28",
+    "angular": "1.8.2",
+    "lodash": "^4.17.20",
+    "vue": "^3.0.7"
+  },
+  "peerDependencies": {
+    "@uirouter/angularjs": "1.0.28",
+    "angular": "1.8.2",
+    "vue": "^3.0.7"
   }
 }
